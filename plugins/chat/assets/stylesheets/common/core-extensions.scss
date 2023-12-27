@@ -1,0 +1,24 @@
+.has-full-page-chat {
+  .global-notice,
+  .bootstrap-mode-notice {
+    display: none;
+  }
+}
+
+.admin-plugins {
+  [data-plugin-name="chat"] {
+    display: none;
+  }
+}
+
+// TODO (davidb): remove once consolidated chat notifications is complete
+.user-stream .large-notifications .item {
+  &:has(.chat-message) {
+    display: none;
+  }
+}
+
+// TODO (davidb): remove once consolidated chat notifications is complete
+.user-menu .quick-access-panel .chat-message {
+  display: none;
+}

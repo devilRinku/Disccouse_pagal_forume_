@@ -1,0 +1,12 @@
+.chat-channel-settings {
+  width: 100%;
+
+  .chat-channel-settings__slug {
+    max-width: 250px;
+    @include ellipsis;
+  }
+
+  .chat-retention-reminder-text {
+    color: var(--primary-medium);
+  }
+}

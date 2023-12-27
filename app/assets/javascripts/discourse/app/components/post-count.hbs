@@ -1,0 +1,19 @@
+<div>
+  <h2>Total Categories: {{totalCategories}}</h2>
+  <h2>Total Topics: {{totalTopics}}</h2>
+  <h2>Total Posts: {{totalPosts}}</h2>
+
+  {{#each categories as |category|}}
+    <div>
+      <h3>Category: {{category.category_name}}</h3>
+      <ul>
+        {{#each category.topics as |topic|}}
+          <li>
+            <p>Topic: {{topic.topic_name}}</p>
+            <p>Posts Count: {{topic.posts_count}}</p>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/each}}
+</div>

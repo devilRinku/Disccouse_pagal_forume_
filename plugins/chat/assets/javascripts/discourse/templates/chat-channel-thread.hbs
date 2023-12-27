@@ -1,0 +1,7 @@
+{{#each (array this.model) as |thread|}}
+  <ChatThread
+    @thread={{thread}}
+    @targetMessageId={{this.targetMessageId}}
+    @includeHeader={{true}}
+  />
+{{/each}}
